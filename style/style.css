@@ -97,6 +97,14 @@ nav {
   margin: 50px auto;
 }
 
+.send-message{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    border: red solid 10px;
+}
 
 .header-picture {
   display: flex;
