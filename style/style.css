@@ -102,11 +102,13 @@ nav {
   display: flex;
   align-items: center;
   gap: 15px;
+  font-family: var(--font-one);
+  font-size: 1rem;
 }
 
 .comments-chat {
   margin: 20px 0;
-  font-size: 22px;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
@@ -119,14 +121,14 @@ nav {
 
 .close-button{
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
   background: red;
   color: white;
   border: none;
-  border-radius: 20px;
+  border-radius: 100px;
   padding: 10px 18px;
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
 }
 
