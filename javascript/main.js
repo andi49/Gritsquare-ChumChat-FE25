@@ -19,4 +19,4 @@ onValue(reference, snapshot => {
 });
 
 
-RenderMessageBox("Eddie", "I hate my life");
+// RenderMessageBox("Eddie", "I hate my life");
