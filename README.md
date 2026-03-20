@@ -19,7 +19,7 @@ A simple real-time chat application where users can send messages to each other.
 
 | Preview                                                         | Hex       | Usage                         |
 | --------------------------------------------------------------- | --------- | ----------------------------- |
-| ![#00A86B](https://via.placeholder.com/20/00A86B/000000?text=+) | `#00A86B` | Primary (buttons, highlights) |
+| ![Primary Green](https://img.shields.io/badge/Primary%20Green-00A86B?style=for-the-badge) | `#00A86B` | Primary  |
 | ![#000000](https://via.placeholder.com/20/000000/FFFFFF?text=+) | `#000000` | Text / dark                   |
 | ![#F2EAE0](https://via.placeholder.com/20/F2EAE0/000000?text=+) | `#F2EAE0` | Background                    |
 | ![#FFFFFF](https://via.placeholder.com/20/FFFFFF/000000?text=+) | `#FFFFFF` | Cards / content               |
