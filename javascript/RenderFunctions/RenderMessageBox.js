@@ -9,9 +9,13 @@ export const RenderMessageBox = (sender, message, messageKey) => {
 
     const ChatBoxSender = document.createElement("h2");
     ChatBoxSender.textContent = sender.username;
-    ChatBoxSender.className = 'header-picture'
+    ChatBoxSender.className = 'chat-box-username'
 
-    ChatBox.appendChild(ChatBoxSender)
+    const ChatboxImg = document.createElement('img')
+    ChatboxImg.className = 'chat-box-pfp'
+    ChatboxImg.src = sender.img;
+
+    ChatBox.append(ChatBoxSender, ChatboxImg)
 
     if(currentUser){
         if(currentUser.id === message.user_id){
@@ -26,9 +30,6 @@ export const RenderMessageBox = (sender, message, messageKey) => {
             ChatBox.appendChild(ChatButtonDelete)
         }
     }
-
-    const ChatboxImg = document.createElement('img')
-    ChatboxImg.className = 'header-picture'
 
 
 
