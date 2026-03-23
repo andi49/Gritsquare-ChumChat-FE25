@@ -12,8 +12,8 @@ export const RenderMessages = async (usersObject, messagesObject, replyObject) =
             if (!Object.hasOwn(replyObject, replyKey)) continue;
 
             const reply = replyObject[replyKey]
-            console.log(reply.parent_id)
-            console.log(messageId)
+            // console.log(reply.parent_id)
+            // console.log(messageId)
             if(reply.parent_id === messageId){
                 console.log("WE HAVE A HIT")
                 for (const userKey in usersObject) {
@@ -21,15 +21,14 @@ export const RenderMessages = async (usersObject, messagesObject, replyObject) =
                     if (!Object.hasOwn(usersObject, userKey)) continue;
                     
                     const user = usersObject[userKey];
-                    console.log(user)
+                    // console.log(user)
                     if(user.user_id === reply.user_id){
                         RenderMessageBox(user, reply, reply.message_id)
                     }
                 }
             checkForReply(reply.message_id);
-
             }
-            console.log(messageId)
+            // console.log(messageId)
         }
     }
 
