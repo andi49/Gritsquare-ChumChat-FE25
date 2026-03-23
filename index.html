@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,19 +17,19 @@
     <link rel="stylesheet" href="style/sidenav.css">
     <!-- CSS ENDS -->
     <title>Chumchat</title>
-    <script src="./javascript/main.js" type="module"></script>
+
 </head>
 
 <body>
     <nav>
-       <a href="index.html"><img src="img/ChumChatLogotyp.png" class="logo" alt="loga för Chumchat"></a> 
+        <a href="index.html"><img src="img/ChumChatLogotyp.png" class="logo" alt="loga för Chumchat"></a>
         <div class="hamburger" id="hamburger">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </div>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <ul class="menu">
-         <button id="darkmodeButton">Toggle Dark Mode</button>
+            <button id="darkmodeButton">Toggle Dark Mode</button>
             <li id="user-area"></li>
         </ul>
     </nav>
@@ -39,19 +40,18 @@
             <a href="#services">MEMES</a>
         </div>
 
-         <div class="content">
+        <div class="content">
+            <div class="send-chat-container">
+                <form class="send-message" id="form-post">
+                    <input placeholder="Skriv ett meddelande..." type="text" class="message-area">
+                    <button type="submit" class="chat-send-button">Send</button>
+                </form>
+            </div>
 
-    <div class="send-chat-container">
-      <form class="send-message" id="form-post">
-        <input placeholder="Skriv ett meddelande..." type="text" class="message-area">
-        <button type="submit" class="chat-send-button">Send</button>
-      </form>
-    </div>
-     
-      
-       
-        <div class="chat-container"></div>
-  </div>
+
+
+            <div class="chat-container"></div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -64,5 +64,5 @@
     <script type="module" src="/javascript/function/darkmode.js"></script>
     <script type="module" src="javascript/function/hamburgermeny.js"></script>
 </body>
- 
+
 </html>
