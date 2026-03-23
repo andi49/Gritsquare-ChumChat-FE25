@@ -1,0 +1,144 @@
+:root{
+    --font-one: "Inter", sans-serif;
+    --colorOne: #00A86B;
+    --colorTwo: #000000;
+    --colorThree: #F2EAE0;
+    --colorFour: #FFFFFF;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url(/img/chat.jpg);
+}
+
+/* Centering container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(/img/chat.jpg);
+  font-family: var(--font-one);
+}
+
+/* Card */
+.register-card {
+  width: 360px;
+  background: var(--colorFour);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.register-card:hover {
+ 
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, var(--colorThree), #0fa36b);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--colorFour);
+  letter-spacing: 1px;
+}
+
+/* Form */
+.form-body {
+  padding: 30px 25px;
+}
+
+/* Input group */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  background: var(--colorFour);
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.input-group:focus-within {
+  background: var(--colorFour);
+  box-shadow: 0 0 0 2px var(--colorOne);
+}
+
+/* Icon */
+.icon {
+  padding: 8px;
+  color: var(--colorTwo);
+  font-size: 1rem;
+}
+
+/* Input */
+.input-group input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  flex: 1;
+  background: transparent;
+  font-size: 0.95rem;
+}
+
+.placeHolderImg{
+  font-family: var(--font-one);
+  font-size: 1rem;
+}
+
+
+.register-image{
+  border: none;
+  outline: none;
+  padding: 10px;
+  flex: 1;
+  background: transparent;
+  font-size: 0.85rem;
+  font-family: var(--font-one);
+
+}
+
+.register-image:focus-within {
+  border-radius: 20px;
+  background: var(--colorFour);
+  box-shadow: 0 0 0 2px var(--colorOne);
+}
+
+/* Button */
+.login-btn {
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  background: linear-gradient(135deg, var(--colorThree), #0fa36b);
+  border: none;
+  border-radius: 10px;
+  color: var(--colorFour);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #0fa36b, var(--colorThree));
+  transform: scale(1.02);
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
+
+.accountalready{
+  color: blue;
+  font-size: 10px;
+  margin-left: 10px;
+}

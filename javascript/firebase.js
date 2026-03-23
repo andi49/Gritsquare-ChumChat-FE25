@@ -1,11 +1,8 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js';
+import { getDatabase, ref } from 'https://www.gstatic.com/firebasejs/12.10.0/firebase-database.js';
+import { getAuth } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
 const firebaseConfig = {
   apiKey: "AIzaSyDXN7CEJvKcFJvicAZVe1H4kFbzzWQFOes",
   authDomain: "chumchat-e9797.firebaseapp.com",
@@ -17,6 +14,12 @@ const firebaseConfig = {
   measurementId: "G-8BQ6HWEXVC"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
+export const db = getDatabase(app);
+export const auth = getAuth(app)
+
+export const reference = ref(db, "/")
+export const usersRef = ref(db, "/users");
+export const messagesRef = ref(db, "/messages");
+export const repliesRef = ref(db, "/replies");
