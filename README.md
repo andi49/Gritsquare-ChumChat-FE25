@@ -86,7 +86,7 @@ We welcome contributions! To keep the project organized, please follow these ste
 ### Current Contributors
 
 * [Andi](https://github.com/andi49) (PROJECT LEADER) 🚩
-* [Eddie](https://github.com/eddiewn) (BACKEND/FRONTEND) (REPLY/Login/Register)
+* [Eddie](https://github.com/eddiewn) (BACKEND/FRONTEND) (Reply/Login/Register)
 * [Jack](https://github.com/jackgustafsson) (BACKEND/FRONTEND) (Weather/Delete)
 * [Ali](https://github.com/Hammadi15) (UX/FRONTEND)
 * [Mohammed](https://github.com/mohammed-alpha91) (PROFANITY)
