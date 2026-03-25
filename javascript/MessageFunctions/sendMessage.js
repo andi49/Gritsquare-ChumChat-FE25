@@ -12,6 +12,8 @@ messageForm.addEventListener("submit", (e) => {
     const message = formData.get("message");
 
     sendMessage(message)
+    const popSound = new Audio("./sound/pop.mp3");
+    popSound.play().catch(err => console.warn("Audio playback failed", err));
 })
 
 const sendMessage = async (text = "") => {

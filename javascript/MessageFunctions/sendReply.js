@@ -11,6 +11,8 @@ export const sendReply = async (messageKey, text = "") => {
     }
 
     let safeMessage = text;
+    const popSound = new Audio("./sound/pop.mp3");
+    popSound.play().catch(err => console.warn("Audio playback failed", err));
     try {
         safeMessage = censorBadWords(text);
     } catch (error) {
