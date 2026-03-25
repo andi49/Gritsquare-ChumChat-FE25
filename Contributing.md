@@ -19,6 +19,7 @@ Before starting, please contact me on Discord: **andionlyfans**.
 - [X] Filter for inappropriate or bad words 
 - [X] Like/Favorite system for posts and answers  
 - [X] Emoji reactions 
+- [X] Make a sound when you send a message
 - [ ] Post picture in the chat
 - [ ] Make it so user can't send vulnerable code
 - [ ] Add a second chat room
@@ -32,5 +33,6 @@ If you have other ideas, please contact me.
 ## Features ChumChat want
 - [ ] Custom cursor 
 - [X] Bot Check
+- [X] Translate
 
 If you have other ideas, feel free to contact me.
