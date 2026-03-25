@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
     mainContent.classList.add("blur");
   }
 
-  // Enable button when checked
+  
   checkbox.addEventListener("change", () => {
     if (checkbox.checked) {
       button.disabled = false;
@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Accept click
+  
   button.addEventListener("click", () => {
     localStorage.setItem("termsAccepted", "true");
     popup.style.display = "none";
