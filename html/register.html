@@ -11,49 +11,44 @@
   
 
   <body>
-     <nav>
-       <a href="../index.html"><img src="../img/ChumChatLogotyp.png" class="logo" alt="loga för Chumchat"></a> 
+    <nav>
+        <a href="../index.html"><img src="../img/ChumChatLogotyp.png" class="logo" alt="loga för Chumchat" /></a>
         <div class="hamburger" id="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-  
-        <ul class="menu">
-             <button id="darkmodeButton">Toggle Dark Mode</button>
-             <li href="#about">ROM1</a>
-            <li href="#services">MEMES</a>
-            <li id="user-area"><a href="html/register.html"></a></li>
+
+         <ul class="menu">
+             <button id="darkmodeButton">
+                <img src="../img/svg/white.png">
+             </button>
+           
         </ul>
     </nav>
 
-    <div class="container">
+    <div class="container" id="main">
       <div class="register-card">
         <div class="header">
           <h1>REGISTER</h1>
         </div>
 
         <form class="form-body">
-          <div class="input-group">
-            <span class="icon">👤</span>
+          <div class="input-group">  
             <input type="text" name="email" placeholder="EMAIL" class="inputDesign" required id="register-username"/>
           </div>
 
-          <div class="input-group">
-            <span class="icon">👤</span>
+          <div class="input-group">          
             <input type="text" name="username" placeholder="USERNAME" class="inputDesign" required id="register-username"/>
           </div>
 
           <div class="input-group">
-            <span class="icon">🔒</span>
             <input type="password" name="password" placeholder="PASSWORD" class="inputDesign" required id="register-password"/>
           </div>
-
-          <div>
-            
-           <label for="image-url" class="placeHolderImg">Picture link</label>
-            <input type="url" name="pfp-url" placeholder="Enter image link" class="register-image"  required>
-          </div>
+<div class="input-group ">
+  <label for="image-url" class="placeHolderImg">Picture link</label>
+  <input type="url" name="pfp-url" placeholder="Enter image link" class="register-image" required>
+</div>
 
           <button type="submit" class="login-btn" id="register-button">REGISTER ME</button>
         </form>
@@ -73,5 +68,6 @@
     </footer>
     <script type="module" src="../javascript/Auth/registerUser.js"></script>
     <script type="module" src="../javascript/function/hamburgermeny.js"></script>
+    <script type="module" src="../javascript/function/darkmode.js"></script>
   </body>
 </html>

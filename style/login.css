@@ -6,8 +6,6 @@
     --colorFour: #FFFFFF;
 }
 
-
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -24,6 +22,8 @@ body {
   font-family: var(--font-one);
 }
 
+
+
 /* Card */
 .register-card {
   width: 360px;
@@ -35,15 +35,18 @@ body {
 }
 
 .register-card:hover {
- 
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.2);
 }
 
 /* Header */
 .header {
-  background: linear-gradient(190deg, var(--colorThree), #0fa36b);
+  background: linear-gradient(190deg, var(--colorThree), var(--colorOne));
   text-align: center;
   padding: 20px 0;
+}
+
+.header-dark{
+ background: linear-gradient(190deg, var(--colorTwo), var(--colorOne));
 }
 
 .header h1 {
@@ -58,6 +61,10 @@ body {
   padding: 30px 25px;
 }
 
+.formBody-dark{
+  background-color: var(--colorTwo);
+}
+
 /* Input group */
 .input-group {
   display: flex;
@@ -69,10 +76,14 @@ body {
   transition: box-shadow 0.2s ease, background 0.2s ease;
 }
 
-.input-group:focus-within {
-  background: var(--colorFour);
-  box-shadow: 0 0 0 2px var(--colorOne);
+.inputgroupLogin-dark{
+  background-color: var(--colorTwo);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
+
 
 /* Icon */
 .icon {
@@ -90,6 +101,41 @@ body {
   background: transparent;
   font-size: 0.95rem;
 }
+
+.input-group-dark{
+  background-color: var(--colorTwo);
+  border-radius: 15px;
+}
+
+.input-group-dark input {
+  background-color: var(--colorTwo); 
+  color: var(--colorFour);
+  border: 1px solid var(--colorThree); 
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+
+.input-group-dark input:focus {
+  outline: none;
+  border-color: var(--colorOne);
+  box-shadow: 0 0 5px var(--colorOne); 
+  background-color: var(--colorTwo); 
+  color: var(--colorFour);
+}
+
+button.login-btn.loginButton-dark {
+  background: linear-gradient(190deg, var(--colorTwo), var(--colorOne));
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.placeHolderImg-dark{
+  color: var(--colorFour);
+}
+
 
 .placeHolderImg{
   font-family: var(--font-one);

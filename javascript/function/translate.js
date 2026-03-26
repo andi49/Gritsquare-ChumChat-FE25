@@ -3,6 +3,7 @@ let googleReady = false;
 
 
 window.googleTranslateElementInit = function () {
+  
   new google.translate.TranslateElement({
     pageLanguage: 'sv,en',
     includedLanguages: 'sv,en',
@@ -36,7 +37,7 @@ function removeGoogleBar() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.getElementById("langBtn");
+  const btn = document.querySelector("#langBtn");
 
   btn.addEventListener("click", () => {
 

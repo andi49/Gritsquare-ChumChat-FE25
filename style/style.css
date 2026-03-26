@@ -132,15 +132,30 @@ nav {
 }
 
 .chat-box {
-  width: 30%;
+  width: 40%;
   background: var(--colorOne);
-  border-radius: 30px;
-  padding: 10px;
+  border-radius: 25px;
+  padding: 12px;
   position: relative;
-  text-align: center;
   margin: 20px;
   color: var(--colorFour);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+   border-radius: 50px 20px 40px 10px; /* olika hörn */
+}
+
+.chat-box::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  background: var(--colorOne);
+  transform: rotate(45deg);
+}
+
+.chat-box:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
 .header-picture {
@@ -484,5 +499,4 @@ nav {
   gap: 10px;
   font-family: Arial, sans-serif;
 }
-
 
