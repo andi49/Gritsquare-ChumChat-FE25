@@ -1,36 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/icon/ChumChatLogotyp.ico" type="image/x-icon">
 
-    <title>Chumchat|Contact</title>
-    <link rel="stylesheet" href="../style/contact.css" />
-    <link rel="stylesheet" href="../style/style.css">
-  </head>
-  <body>
-    <nav>
-        <a href="../index.html"><img src="../img/ChumChatLogotyp.png" class="logo" alt="loga för Chumchat" /></a>
-        <div class="hamburger" id="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/icon/ChumChatLogotyp.ico" type="image/x-icon">
 
-         <ul class="menu">
-             <button id="darkmodeButton">
-                <img src="../img/svg/white.png">
-             </button>
-            <li id="user-area"></li>
-        </ul>
-    </nav>
+  <title>Chumchat|Contact</title>
+  <link rel="stylesheet" href="../style/contact.css" />
+  <link rel="stylesheet" href="../style/style.css">
+</head>
 
-  
-    <section class="container" id="main">
-      <div class="boxcontact">
+<body>
+  <nav>
+    <a href="../index.html"><img src="../img/ChumChatLogotyp.png" class="logo" alt="loga för Chumchat" /></a>
+    <div class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <ul class="menu">
+      <a id="google_translate_element"> </a>
+      <button id="darkmodeButton">
+        <img src="../img/svg/white.png">
+      </button>
+      <li id="user-area"></li>
+    </ul>
+  </nav>
+
+
+  <section class="container" id="main">
+    <div class="boxcontact">
       <h1>Contact us!</h1>
-     
+
 
       <form>
         <input type="text" placeholder="mail" class="full" required />
@@ -39,19 +42,24 @@
 
         <button type="submit" class="chat-send-button">SUBMIT</button>
       </form>
-    </section>
-</div>
-    <footer class="footer">
-        <div id="weather-container">
-            <h3 id="headerForWeather"></h3>
-        </div>
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-             <li><a href="../index.html">ROM1</a></li> 
-           <li><a href="images.html">MEMES</a></li> 
-        </ul>
-    </footer>
-  </body>
-  <script type="module" src="../javascript/function/darkmode.js"></script>
+  </section>
+  </div>
+  <footer class="footer">
+    <div id="weather-container">
+      <h3 id="headerForWeather"></h3>
+    </div>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="../index.html">ROM1</a></li>
+      <li><a href="images.html">MEMES</a></li>
+    </ul>
+  </footer>
+</body>
+<script type="module" src="../javascript/main.js"></script>
+<script type="module" src="../javascript/function/darkmode.js"></script>
+<script type="module" src="../javascript/function/hamburgermeny.js"></script>
+<script type="module" src="../javascript/function/translate.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </html>

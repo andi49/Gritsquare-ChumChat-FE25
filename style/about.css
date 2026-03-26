@@ -10,3 +10,21 @@
   --colorThree: #f2eae0;
   --colorFour: #ffffff;
 }
+
+#textContainer {
+  margin: 5% 10% 35% 10%;
+  background-color: var(--colorFour);
+  padding: 1rem;
+  border-radius: 20px;
+  font-family: var(--font-one);
+}
+
+#textContainer h1,
+.textSections {
+  margin-bottom: 1rem;
+}
+
+.textSections ol {
+  list-style-position: inside;
+  margin-top: 0.5rem;
+}

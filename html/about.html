@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="shortcut icon" href="../img/icon/ChumChatLogotyp.ico" type="image/x-icon">
-      <!-- Google Fonts -->
+    <link rel="shortcut icon" href="../img/icon/ChumChatLogotyp.ico" type="image/x-icon">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link  href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <!-- Google fonts end -->
     <!-- CSS -->
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/about.css">
-   
+
     <!-- CSS ENDS -->
     <title>Chumchat|About</title>
 </head>
+
 <body>
-     <nav>
+    <nav>
         <a href="../index.html"><img src="../img/ChumChatLogotyp.png" class="logo" alt="loga för Chumchat" /></a>
         <div class="hamburger" id="hamburger">
             <span class="bar"></span>
@@ -25,20 +29,55 @@
             <span class="bar"></span>
         </div>
 
-         <ul class="menu">
-             <button id="darkmodeButton">
+        <ul class="menu">
+            <a id="google_translate_element"> </a>
+            <button id="darkmodeButton">
                 <img src="../img/svg/white.png">
-             </button>
+            </button>
             <li id="user-area"></li>
         </ul>
     </nav>
 
     <main class="main" id="main">
-       <div>
-        <h1>Om ChumChat</h1>
-
-        <p>Vår app</p>
-       </div>
+        <div id="textContainer">
+            <h1>Om ChumChat</h1>
+            <div class="textSections">
+                <h2>Vår app</h2>
+                <p>Mer än 3 miljarder människor i över 180 länder använder ChumChat för att hålla kontakten med familj
+                    och vänner,
+                    när som helst och oavsett var de befinner sig. ChumChat är gratis och lättanvända, säkra (typ) och
+                    tillförlitliga
+                    meddelandetjänster (och lite andra random grejer) som är tillgängliga på olika enheter i hela
+                    världen.
+                </p>
+                <ol>
+                    <li>Och ja - namnet ChumChat är bara en random namngivning</li>
+                    <li>Plattformen är avgiftsfri för tillfället</li>
+                </ol>
+            </div>
+            <div class="textSections">
+                <h2>Vårt mål</h2>
+                <p>ChumChat startades som ett alternativ till Discord. Vår produkt har nu stöd för att skicka och ta
+                    emot en rad olika
+                    medieobjekt: text och bilder. Detta kan dock förändras över tid. Några av dina mest publika
+                    ögonblick delas
+                    via ChumChat och det är därför vi har byggt ett "säkert" inloggningssystem i appen. Bakom varje
+                    produktbeslut finns
+                    vår strävan att göra det möjligt för människor att kommunicera utan hinder var de än befinner sig.
+                    Coolt va?!
+                </p>
+            </div>
+            <div>
+                <h2>Vårt team</h2>
+                <p>ChumChat grundades av den legendariska projektledaren Andreas och hans kodintresserade lärjungar:
+                    Jack, Eddie, Ali och Elias.
+                    Dessa grabbar har med flera års erfarenhet kodat och frambringat extraordinära resultat. Tack vare
+                    det här gänget har ChumChat
+                    blivit en stor succé och nu vill till och med olika företag som Google veta vad gruppen ska skapa
+                    härnäst.
+                </p>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -46,11 +85,17 @@
             <h3 id="headerForWeather"></h3>
         </div>
         <ul>
-            <li><a href="html/about.html">About</a></li>
-            <li><a href="#">Contact</a></li>
-             <li><a href="#">ROM1</a></li> 
-           <li><a href="#">MEMES</a></li> 
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="../index.html">ROM1</a></li>
+            <li><a href="images.html">MEMES</a></li>
         </ul>
     </footer>
 </body>
+<script type="module" src="../javascript/main.js"></script>
+<script type="module" src="../javascript/function/darkmode.js"></script>
+<script type="module" src="../javascript/function/hamburgermeny.js"></script>
+<script type="module" src="../javascript/function/translate.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </html>
