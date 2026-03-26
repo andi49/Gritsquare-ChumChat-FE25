@@ -1,6 +1,8 @@
-import { auth } from "../firebase.js";
+import { auth, db } from "../firebase.js";
 import { toggleLike } from "../MessageFunctions/likeMessage.js";
 import { toggleFavorite } from "../MessageFunctions/favoriteMessage.js";
+import { deletePicture } from "../MessageFunctions/deletePicture.js";
+import { ref, remove } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-database.js";
 
 // Renderar en enskild bild
 export const RenderImageBox = (uploader, imageData, imageKey, isLiked, isFav) => {
@@ -26,15 +28,33 @@ export const RenderImageBox = (uploader, imageData, imageKey, isLiked, isFav) =>
 
     ChatBox.append(UserInfo);
 
-    // Bild istället för textmeddelande
+    if (user) {
+        if (user.uid === imageData.user_id) {
+            console.log("WE HAVE A MATCH!!");
+            const ChatButtonDelete = document.createElement("button");
+            ChatButtonDelete.innerText = "X";
+            ChatButtonDelete.classList = "close-button";
+
+            ChatButtonDelete.addEventListener("click", () => deletePicture(imageKey));
+            ChatBox.appendChild(ChatButtonDelete);
+        }
+    }
+
     const img = document.createElement("img");
     img.src = imageData.img_url;
     img.alt = `Bild från ${uploader ? uploader.username : "Unknown"}`;
     img.className = "rendered-image";
 
-    img.onerror = () => {
+    img.onerror = async () => {
         console.warn("Kunde inte ladda bilden:", imageData.img_url);
-        img.remove();
+        ChatBox.remove();
+
+        try {
+            await remove(ref(db, `images/${imageKey}`));
+            console.info("Trasig bild borttagen från Firebase:", imageKey);
+        } catch (dbErr) {
+            console.error("Kunde inte ta bort trasig bild från Firebase:", dbErr);
+        }
     };
 
     const TimeStamp = document.createElement("p");

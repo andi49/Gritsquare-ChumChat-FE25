@@ -1,23 +1,39 @@
-import {auth, imagesRef} from "../firebase.js";
-import {push, set} from "https://www.gstatic.com/firebasejs/12.10.0/firebase-database.js";
+import { auth, imagesRef } from "../firebase.js";
+import { push, set } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-database.js";
 
 const form = document.querySelector("form");
 
 form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  const url = document.getElementById("image-url").value.trim();
+    e.preventDefault();
+    const url = document.getElementById("image-url").value.trim();
 
-  if (url === "") {
-    alert("Vänligen skriv in en URL.");
-    return;
-  }
+    if (url === "") {
+        alert("Vänligen skriv in en URL.");
+        return;
+    }
 
-  sendPicture(url);
+    sendPicture(url);
 });
+
+async function validateImageUrl(url) {
+    return new Promise((resolve) => {
+        const testImg = new Image();
+        testImg.onload = () => resolve(true);
+        testImg.onerror = () => resolve(false);
+        testImg.src = url;
+    });
+}
 
 async function sendPicture(url) {
     const user = auth.currentUser;
     if (!user) return alert("Login first!");
+
+    const validImage = await validateImageUrl(url);
+    if (!validImage) {
+        alert("Bilden kunde inte laddas. Kontrollera URL och försök igen.");
+        return;
+    }
+
     const newMsg = push(imagesRef);
 
     try {

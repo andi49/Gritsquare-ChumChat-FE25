@@ -1,6 +1,5 @@
 import { usersRef } from "../firebase.js";
 import { push, set } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-database.js";
-import { setCurrentUser } from "./auth.js";
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js";
 import { auth } from "../firebase.js";
 import { renderWeatherData } from "../function/RenderWeatherData.js";
@@ -43,7 +42,6 @@ const registerUser = async (userId, username, pfpUrl) => {
     };
 
     await set(newUser, userData);
-    setCurrentUser(newUser);
 };
 
 renderWeatherData();
