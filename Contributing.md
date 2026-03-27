@@ -31,7 +31,7 @@ If you have other ideas, please contact me.
 ---
 
 ## Features ChumChat want
-- [ ] Custom cursor 
+- [X] Custom cursor 
 - [X] Bot Check
 - [X] Translate
 - [X] Make it so user can't send vulnerable code

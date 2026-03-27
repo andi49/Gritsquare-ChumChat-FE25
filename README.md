@@ -95,6 +95,7 @@ We welcome contributions! To keep the project organized, please follow these ste
 * [Daniel](https://github.com/adlounid) (Emoji List)
 * [Adam](https://github.com/AdamTimrell) (The ting goes pop)
 * [Syed](https://github.com/syedzarak3238) (Terms of service)
+* [Emma](https://github.com/emmaapersson) (Custome mouse)
 
 
 ---
